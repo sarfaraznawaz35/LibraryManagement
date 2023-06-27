@@ -1,0 +1,52 @@
+
+<div class="col-md-12 row" >
+    <div class="col-md-8 vh-100">
+        <div class="d-flex align-items-center justify-content-center vh-100">
+            <img src="assets/signupImage.jpg" class="img-fluid" alt="">
+        </div> 
+
+    </div>
+    <div [formGroup]="signupForm" class="col-md-4 bg-primary bg-gradient text-white d-flex flex-column align-items-center justify-content-center vh-100">
+        <h3>User Registration - Signup</h3>
+        <p>Create New Librarian Account </p>
+        
+        <div class=" col-md-10">
+            <label class="form-label" for="">Username:</label>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-user pe-2 fa-lg"></i>
+                <input class="form-control" type="text" formControlName="name">
+            </div>
+        </div>
+        <div class=" col-md-10 mt-3">
+            <label class="form-label" for="">Mobile No:</label>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-user pe-2 fa-lg"></i>
+                <input class="form-control" type="text" formControlName="mobile">
+            </div>
+        </div>
+        <div class=" col-md-10 mt-3">
+            <label class="form-label" for="">Email Id:</label>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-envelope pe-2 fa-lg" aria-hidden="true"></i>
+                <input class="form-control" type="text" formControlName="email">
+            </div>
+        </div>
+        <div class=" col-md-10 mt-3">
+            <label class="form-label" for="">Password:</label>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-user pe-2 fa-lg"></i>
+                <input class="form-control" type="text" formControlName="password">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3" >
+            <button type="button" class="btn btn-danger w-100 rounded rounded-pill" (click)="createSignupUser()" >SIGNUP</button> 
+        </div>
+        <div class="col-md-4 mt-3" >
+            <button type="button" class="btn btn-success w-100 rounded rounded-pill">LOGIN</button>
+        </div>
+
+    </div>
+
+</div>
+
